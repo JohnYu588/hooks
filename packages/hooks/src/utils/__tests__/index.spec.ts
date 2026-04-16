@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { isBoolean, isFunction, isNumber, isObject, isString, isUndef } from '../index';
+import { isBoolean, isFunction, isNumber, isObject, isString, isUndef } from '../';
 
 describe('shared utils methods', () => {
   test('isBoolean', () => {
@@ -21,7 +21,7 @@ describe('shared utils methods', () => {
   test('isNumber', () => {
     expect(isNumber(1)).toBe(true);
     expect(isNumber(Infinity)).toBe(true);
-    expect(isNumber(NaN)).toBe(true);
+    expect(isNumber(NaN)).toBe(false);
 
     expect(isNumber('str')).toBe(false);
     expect(isNumber({})).toBe(false);
