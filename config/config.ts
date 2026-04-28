@@ -93,12 +93,12 @@ const config = defineConfig({
   ],
   mode: 'site',
   title: 'ahooks 3.0',
-  favicon: '/simple-logo.svg',
-  logo: '/logo.svg',
+  favicon: '/hooks/simple-logo.svg',
+  logo: '/hooks/logo.svg',
   dynamicImport: {},
   manifest: {},
   hash: true,
-  publicPath: '/',
+  publicPath: '/hooks/',
   alias: {
     ahooks: `${process.cwd()}/packages/hooks/src/index.ts`,
     '@ahooks.js/use-url-state': `${process.cwd()}/packages/use-url-state/src/index.ts`,
@@ -111,7 +111,7 @@ const config = defineConfig({
       rel: 'stylesheet',
       href: 'https://unpkg.com/@alifd/theme-design-pro@0.6.2/dist/next-noreset.min.css',
     },
-    { rel: 'stylesheet', href: '/style.css' },
+    { rel: 'stylesheet', href: '/hooks/style.css' },
   ],
   navs: {
     'zh-CN': [
